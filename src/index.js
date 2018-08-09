@@ -1,6 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './store/index';
 
 
-ReactDOM.render(<h1>Siema</h1>, document.getElementById('root'));
+render(
+<Provider store={store} >
+  <h1>Siema</h1>
+</Provider>,
+document.getElementById('root'));
 
