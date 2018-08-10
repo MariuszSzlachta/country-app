@@ -1,19 +1,20 @@
+// React
 import React from 'react';
 import { render } from 'react-dom';
+// React-Router
+import  { Router, hashHistory } from 'react-router';
+import routes from './routes';
+// Redux
 import { Provider } from 'react-redux';
 import store from './store/index';
-import DevTools from './DevTools';
 import { getCountries } from './actions/actions';
+
 
 render(
 <Provider store={store} >
-  <div>
-    <h1>Siema</h1>
-    <DevTools />
-  </div>
+  <Router history={hashHistory} routes={routes} />
 </Provider>,
 document.getElementById('root'));
 
 
-store.dispatch(getCountries());
 store.dispatch(getCountries());
