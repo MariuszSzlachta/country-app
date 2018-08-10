@@ -12,7 +12,7 @@ const navigation = props => {
             <div className="navbar-header">
                 <Link className="navbar-brand" to="/">Państwa.js</Link>
             </div>
-            <div className="collapse navbar-collapse">
+            <div className="collapse navbar-collapse show">
                 <ul className="nav navbar-nav">
                     <li><Link to="/countries">Countries</Link></li>
                     <li><Link to="/continents">Continents</Link></li>
