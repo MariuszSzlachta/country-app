@@ -13,6 +13,7 @@ class CountryFlagContainer extends Component {
   }
   componentDidMount(props){
     this.props.dispatch(getCountries());
+    this.props.dispatch(searchCountries(''));
   }
   render() {
     return (
