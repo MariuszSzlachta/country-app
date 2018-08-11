@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import CountryFlag from './CountryFlag';
+import '../country.css';
 
 const countryFlagList = (props) => (
   <div className="countries-list">
@@ -15,7 +16,5 @@ const countryFlagList = (props) => (
     })}
   </div>
 )
-
-
 
 export default countryFlagList;

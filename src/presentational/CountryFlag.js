@@ -1,4 +1,5 @@
 import React from 'react';
+import '../country.css';
 
 const countryFlag = (props) => {
   return (
