@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import { setContinent, deleteCountry } from '../actions/actions';
 import CountryFlagList from '../presentational/CountryFlagList';
 
-export default class ContinentContainer extends Component {
+class ContinentContainer extends Component {
   constructor(props){
     super(props);
   }
-  chooseContinet(event){
+  chooseContinent(event){
     this.props.dispatch(setContinent(event.target.value));
   }
   deleteCountry(id){
@@ -31,6 +31,6 @@ const mapStateToProps = function (store) {
   return {
       visibleCountries: store.countriesReducer.visibleCountries
   };
-};
+}
 
-export default connect(mapStateToProps)(ContinentsContainer);
+export default connect(mapStateToProps)(ContinentContainer);
