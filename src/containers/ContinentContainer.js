@@ -17,7 +17,7 @@ class ContinentContainer extends Component {
   render() {
     return (
       <div>
-        <select onChange={e => this.chooseContinent(e)}>
+        <select className="select" onChange={e => this.chooseContinent(e)}>
           <option value="Europa">Europa</option>
           <option value="Afryka">Afryka</option>
         </select>
