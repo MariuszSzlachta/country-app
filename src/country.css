@@ -1,3 +1,6 @@
+body {
+  background: linear-gradient(135deg, #2c539e 0%,#2c539e 100%);
+}
 #root {
   height: 100vh;
 }
@@ -23,7 +26,9 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
+.search {
+  margin: 20px auto;
+}
 .country-photo {
   position: absolute;
   width: 115px;
@@ -47,7 +52,7 @@ h1 {
   letter-spacing: 1.2px;
   text-align: center;
   font-weight: 600;
-  color: #323232
+  color: #fff;
 }
 
 h2 {
@@ -55,9 +60,14 @@ h2 {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1.2px;
-  color: #5f5f5f;
+  color: #fff;
+  transition: color 0.3s;
 }
-
+h1:hover,
+h2:hover,
+.navbar-brand:hover {
+  color: #adadad;
+}
 .info {
   display: flex;
   justify-content: space-around;
@@ -75,13 +85,13 @@ h2 {
 .info div span:nth-of-type(1) {
   font-weight: bold;
   font-size: 24px;
-  color: #323232;
+  color: #fff;
 }
 
 .info div span:nth-of-type(2) {
   font-size: 12px;
   text-transform: uppercase;
-  color: #5f5f5f;
+  color: #fff;
   letter-spacing: .5px;
   padding: 6px 0;
 }
@@ -107,7 +117,6 @@ h2 {
 }
 
 .country-logo {
-  border: 1px solid #eee;
   width: 100%;
   height: 100%;
 }
@@ -121,13 +130,13 @@ h2 {
 }
 .navbar-brand {
   margin: 0;
-  color: #003e9f;
+  color: #fff;
 }
 .navbar-nav li {
   margin-right: 20px;
 }
 .navbar-nav a {
-  color: #003e9f;
+  color: #fff;
 }
 @media (max-width: 768px) {
   #root {
