@@ -10,7 +10,7 @@ const navigation = props => {
       <nav className="navbar navbar-default">
         <div className="container-fluid">
             <div className="navbar-header">
-                <Link className="navbar-brand" to="/">Państwa</Link>
+                <Link className="navbar-brand" to="/">Country App</Link>
             </div>
             <div className="collapse navbar-collapse show">
                 <ul className="nav navbar-nav">

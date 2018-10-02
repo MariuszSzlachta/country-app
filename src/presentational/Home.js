@@ -1,8 +1,9 @@
 import React from 'react';
 
 const home = props => (
-  <div>
-    <h1>Aplikacja Państwa</h1>
+  <div className="home">
+    <h1 className="home__title">Welcome</h1>
+    <p className="home__text">let's take a journey arount the countries</p>
   </div>
 )
 

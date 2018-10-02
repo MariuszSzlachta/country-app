@@ -5,7 +5,7 @@ import CountryFlagList from '../presentational/CountryFlagList';
 
 class ContinentContainer extends Component {
   componentDidMount(){
-    this.props.dispatch(setContinent('Europa'));
+    this.props.dispatch(setContinent('Europe'));
   }
   chooseContinent(event){
     this.props.dispatch(setContinent(event.target.value));
@@ -18,8 +18,8 @@ class ContinentContainer extends Component {
     return (
       <div>
         <select className="select" onChange={e => this.chooseContinent(e)}>
-          <option value="Europa">Europa</option>
-          <option value="Afryka">Afryka</option>
+          <option value="Europe">Europe</option>
+          <option value="Africa">Africa</option>
         </select>
         <CountryFlagList countries={this.props.visibleCountries} deleteCountry={this.deleteCountry.bind(this)} />
       </div>
