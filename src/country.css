@@ -1,15 +1,18 @@
 body {
-  background: linear-gradient(135deg, #2c539e 0%,#2c539e 100%);
+  background: linear-gradient(135deg, #2c539e 0%, #2c539e 100%);
 }
+
 #root {
   height: 100vh;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px auto;
 }
+
 .country-wrapper {
   height: 400px;
   width: 350px;
@@ -26,9 +29,11 @@ header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .search {
   margin: 20px auto;
 }
+
 .country-photo {
   position: absolute;
   width: 115px;
@@ -63,11 +68,13 @@ h2 {
   color: #fff;
   transition: color 0.3s;
 }
+
 h1:hover,
 h2:hover,
 .navbar-brand:hover {
   color: #adadad;
 }
+
 .info {
   display: flex;
   justify-content: space-around;
@@ -121,36 +128,54 @@ h2:hover,
   width: 100%;
   height: 100%;
 }
+
 .navbar-nav {
   width: auto;
   flex-direction: row;
   justify-content: center;
 }
+
 .navbar-header {
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+
 .navbar-brand {
   margin: 0;
   color: #fff;
 }
+
 .navbar-nav li {
   margin-right: 20px;
 }
+
 .navbar-nav a {
   color: #fff;
 }
+
 .select {
   margin: 20px auto 0;
   padding: 5px 10px;
   display: flex;
 }
+
+address p,
+address a {
+  color: #fff;
+}
+
+address a:hover {
+  color: #ccc;
+}
+
 @media (max-width: 768px) {
   #root {
     height: 100%;
   }
+
   .countries-list {
     flex-direction: column;
   }
+
   .single-country {
     display: flex;
     flex-direction: column;
@@ -159,28 +184,35 @@ h2:hover,
     height: auto;
     width: 50%;
   }
+
   .single-country button {
     margin: 20px auto;
   }
+
   .country-logo-wrapper {
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 480px) {
   .country-wrapper {
     width: 100%;
   }
+
   .navbar-header {
     margin: 0 auto;
   }
+
   .navbar-brand {
     text-align: center;
     color: #003e9f;
   }
+
   .navbar-nav li {
     text-align: center;
     color: #003e9f;
   }
+
   .single-country {
     width: 100%;
   }
