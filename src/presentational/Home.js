@@ -1,5 +1,9 @@
 import React from 'react';
 
-const home = () => <h1>Państwa</h1>;
+const home = props => (
+  <div>
+    <h1>Aplikacja Państwa</h1>
+  </div>
+)
 
 export default home;
