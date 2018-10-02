@@ -4,9 +4,6 @@ import { setContinent, deleteCountry } from '../actions/actions';
 import CountryFlagList from '../presentational/CountryFlagList';
 
 class ContinentContainer extends Component {
-  constructor(props){
-    super(props);
-  }
   componentDidMount(){
     this.props.dispatch(setContinent('Europa'));
   }

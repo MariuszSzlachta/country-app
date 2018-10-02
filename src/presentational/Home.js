@@ -1,5 +1,5 @@
 import React from 'react';
 
-const home = () => <h1>Witamy w aplikacji Państwa</h1>;
+const home = () => <h1>Państwa</h1>;
 
 export default home;
